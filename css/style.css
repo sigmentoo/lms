@@ -240,7 +240,7 @@
   top: 0;
   content: "";
   border-radius: 10px;
-  background: #e2f8ff;
+  background: transparent;
   height: 100%;
   width: 90%;
   margin: 0 auto;
