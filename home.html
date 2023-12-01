@@ -13,20 +13,32 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/feather.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <style>
         html {
             scroll-behavior: smooth;
         }
-        .carousel-item img{
-            height:500px;
-            
+
+        .carousel-item img {
+            height: 450px;
         }
+
         .shadow-1 {
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
         }
+
+        .list-group {
+            transition: all 0.4s;
+        }
+
+            .list-group:hover {
+                -moz-transform: scale(1.01);
+                -webkit-transform: scale(1.01);
+                transform: scale(1.01);
+            }
     </style>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   
+
 </head>
 
 
@@ -47,7 +59,7 @@
 
 
                         <a class="navbar-brand text-nowrap" href="#home">
-                            <img id="header-logo" class="img-thumbnail" src="images/Logo_Color.png" style="width:50px;">
+                            <img id="header-logo" class="img-thumbnail" src="images/Logo_Color.png" style="width:60px;">
                         </a>
 
 
@@ -60,30 +72,39 @@
                                 <li class="nav-item">
 
                                 </li>
-                                <li class="nav-item active" id="itemhome">
+                                <li class="nav-item active">
                                     <a class="nav-link" href="#home">Home</a>
                                 </li>
-                                <li class="nav-item" id="itemabout">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#vision">Vision</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="#about">About Us</a>
                                 </li>
-                                <li class="nav-item" id="itemactivity">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#member">Committe Members</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="#activity">Activity</a>
                                 </li>
-                                <li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="#conference">Conference</a>
-                                    
+
                                 </li>
-                                <!--<li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#">Home <i class="ti-angle-down"></i></a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">about us</a>
-                                    <a class="dropdown-item" href="#">our mission</a>
-                                    <a class="dropdown-item" href="#">our team</a>
-                                    <a class="dropdown-item" href="#">terms of services </a>
-                                    <a class="dropdown-item" href="#">Privacy policy</a>
-                                </div>
-                            </li>-->
+                                <li class="nav-item" style="color:white;">
+                                    <a href="https://www.youtube.com/channel/UCwx55me6_InHqYDWJNiZbUA" target="_blank"
+                                       class="header-btn bg-dark fw-500 text-white  p-2 lh-32 w100 text-center d-inline-block rounded-xl mt-1"><span style="font-size:15pt;" class="bi bi-youtube"></span></a>
+                                    <a href="https://twitter.com/" class="header-btn bg-dark fw-500 text-white  p-2 lh-32 w100 text-center d-inline-block rounded-xl mt-1" style="font-size:15pt;" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-twitter-x">
+                                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                                        </svg>
+                                    </a>
+                                
+
+                                </li>
+
                             </ul>
+                           
                         </div>
                     </div>
 
@@ -92,19 +113,21 @@
         </div>
 
         <section id="home">
-            <div class="container-fluid">
+
+            <!---fluid-->
+            <div class="container">
                 <br />
                 <div class="row">
                     <div class="col-md-12">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
-                              
+
                                 <div class="carousel-item active">
                                     <div class="carousel-caption ">
-                                        <h1 class="shadow-1 display3-size display2-md-size fw-700 aos-init" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                                        <h1 class="shadow-1 display3-size display2-md-size fw-400 aos-init" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" style="color:white;">
                                             Welcome to NeoFOCUS-UK
                                         </h1>
-                                        <h4 class="shadow-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Advancing Neonatal Functional Haemodynamic and Point of Care Ultrasound in the UK</h4>
+                                        <h4 class="shadow-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" style="color:white;">Advancing Neonatal Functional Haemodynamic and Point of Care Ultrasound in the UK</h4>
                                         <br>
                                         <br>
                                         <br>
@@ -119,6 +142,12 @@
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="./images/slider3.png" alt="Third slide">
                                 </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/slider4.png" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/slider5.png" alt="Third slide">
+                                </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -132,7 +161,7 @@
                     </div>
                 </div>
             </div>
-          
+
         </section>
 
 
@@ -157,6 +186,63 @@
 
 
     -->
+        <section id="vision">
+            <br />
+            <br />
+            <br />
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3><strong> Our vision </strong></h3>
+
+                    </div>
+                </div>
+
+
+                <br>
+                <h3><strong> A) A Proposal for Specialist Interest Group within BAPM</strong></h3>
+                <p style="text-align: justify;">
+                    Building on our success, we have proposed establishing NeoFOCUS-UK as a <strong> Specialist Interest Group within</strong> British Association of Perinatal Medicine:
+                    Building on our accomplishments, we propose the establishment of NeoFOCUS-UK as a Specialist Interest Group (SIG) within the British Association of Perinatal Medicine (BAPM). <a href="https://www.bapm.org/" target="_blank"> British Association of Perinatal Medicine | Home (bapm.org)</a> This initiative aligns with our mission to develop national training and clinical practice frameworks, involve the broader neonatology community, and promote our endeavours through BAPM's established channels.
+
+                </p>
+
+                <br>
+                <h3><strong>B)  various activities at the national levels</strong></h3>
+                <p style="text-align: justify;">
+                    In the future we would as a group like to be actively involved in various activities:
+                </p>
+
+                <ol>
+                    <li>
+                        <strong>1. Organizational Structures and Frameworks: </strong>Developing organizational structures and frameworks for practice.
+                    </li>
+                    <li>
+                        <strong>2. Guidelines</strong> Crafting condition-specific guidelines, including neonatal lung ultrasound, integrated haemodynamic assessment, and POCUS for central line assessment.
+                    </li>
+                    <li>
+                        <strong>3. Training: </strong> Creating a core curriculum, establishing training requirements, developing a robust process for credentialing, and delivering hands-on training courses.
+                    </li>
+                    <li>
+                        <strong>4. Continuing Professional Development: </strong> Offering regular CPD and peer-review sessions for clinicians using POCUS and integrated haemodynamic skills.
+                    </li>
+                    <li>
+                        <strong>5. Research and Quality Improvement: </strong> Engaging in research and quality improvement initiatives related to POCUS and integrated haemodynamics in neonatology.
+                    </li>
+                    <li>
+                        <strong>6. Curriculum Inclusion:</strong> Working towards the inclusion of accredited POCUS and integrated haemodynamic training in the neonatal specialist curriculum.
+                    </li>
+                    <li>
+                        7. We also aim to include patient and family representatives, neonatal trainee representatives, and relevant specialist expertise.
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+
+
         <section id="about">
             <br />
             <br />
@@ -167,7 +253,7 @@
                     <div class="col-md-12">
                         <h3><strong> About NeoFOCUS-UK</strong></h3>
                         <p style="text-align: justify;">
-                            At NeoFOCUS-UK (Neonatal Functional Haemodynamics and Point of Care Ultrasound), we are a dedicated group of UK-based neonatologists, specializing in the application of functional echocardiography and point of care ultrasound (POCUS) in neonatal care. Our mission is to enhance diagnostic precision and support pathophysiology-based neonatal management in term and preterm infants. With growing evidence supporting the benefits of POCUS, we aim to overcome barriers to training and governance in the UK neonatology community.
+                            At NeoFOCUS-UK (Neonatal Functional Haemodynamics and Point of Care Ultrasound), we are a dedicated group of UK-based neonatologists, specialising in the application of functional echocardiography and point of care ultrasound (POCUS) in neonatal care. Our mission is to enhance diagnostic precision and support pathophysiology-based neonatal management in term and preterm infants. With growing evidence supporting the benefits of POCUS, we aim to overcome barriers to training and governance in the UK neonatology community.
                         </p>
                     </div>
                 </div>
@@ -187,284 +273,441 @@
 
             </div>
         </section>
-        <div class="container">
-            <h3><strong>Our Executive Committee Members<br></strong></h3>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Mahmoud.jpg" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp;  Mahmoud Montasser</h5>
-                            <p class="card-text">
-                                University Hospital Wishaw
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:mahmoud.montasser@lanarkshire.scot.nhs.uk" style="font-size: 10pt;">mahmoud.montasser@lanarkshire.scot.nhs.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Bikash.png" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp;  Bikash Bhojnagarwala</h5>
-                            <p class="card-text">
-                                Medway NHS Foundation Trust
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:bikash.bhojnagarwala@nhs.net">bikash.bhojnagarwala@nhs.net</a>
-                            </p>
-
-                        </div>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Anne.png" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp;  Anne Marie Heuchan</h5>
-                            <p class="card-text">
-                                Royal Hospital for Children, Glasgow
-                                <br> <strong>  Consultant Neonatologist</strong>
-
-                                <a href="mailto:AnneMarie.Heuchan@ggc.scot.nhs.uk">AnneMarie.Heuchan@ggc.scot.nhs.uk</a>
-                            </p>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Neil.png" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp;  Neil Patel</h5>
-                            <p class="card-text">
-                                Royal Hospital for Children, Glasgow
-
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:Neil.Patel@ggc.scot.nhs.uk">Neil.Patel@ggc.scot.nhs.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                    </div>
-                </div>
-
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Nim.png" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Nim Subhedar</h5>
-                            <p class="card-text">
-                                Liverpool Women's NHS Foundation Trust
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:Nim.Subhedar@lwh.nhs.uk">Nim.Subhedar@lwh.nhs.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Jay.png" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Jay Banerjee</h5>
-                            <p class="card-text">
-                                Imperial College Healthcare NHS Trust
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:j.banerjee@imperial.ac.uk">j.banerjee@imperial.ac.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Anna.jpg" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Anna Milan</h5>
-                            <p class="card-text">
-                                Guy's and St Thomas' NHS Foundation Trust
-                                <br> <strong>  Consultant Neonatologist</strong>
-
-                                <a href="mailto:Anna.Milan@gstt.nhs.uk">Anna.Milan@gstt.nhs.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Ahmad.jpg" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Ahmad Sherjil</h5>
-                            <p class="card-text">
-                                Victoria Hospital, Kirkcaldy
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:ahmad.sherjil@nhs.scot">ahmad.sherjil@nhs.scot</a>
-                            </p>
-
-                        </div>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Anay.jpg" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Anay Kulkarni</h5>
-                            <p class="card-text">
-                                St. George`s University Hospital NHS Foundation trust
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:Anay.Kulkarni@stgeorges.nhs.uk">Anay.Kulkarni@stgeorges.nhs.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Geza.jpg" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Geza Vass</h5>
-                            <p class="card-text">
-                                Oxford University Hospital NHS Foundation Trust
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:Geza.Vass@ouh.nhs.uk">Geza.Vass@ouh.nhs.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                        <br>
-
-
-                    </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Virginie.jpg" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Virginie Meau-Petit</h5>
-                            <p class="card-text">
-                                Franco-britannique Hospital,<br> Honorary consultant neonatologist Imperial college healthcare NHS trust.
-                                <br> <strong>  Consultant Neonatologist</strong>
-                                <a href="mailto:docteurmeaupetit@gmail.com">docteurmeaupetit@gmail.com</a>
-                            </p>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Arin.jpg" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Dr Arin Mukherjee</h5>
-                            <p class="card-text">
-                                St Mary’s Hospital, Manchester
-                                <br> <strong>  Consultant Neonatologist</strong>
-
-                                <a href="mailto:Arindam.Mukherjee@mft.nhs.uk">Arindam.Mukherjee@mft.nhs.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-
-                    </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 10px;">
-                    <div class="card border-0 shadow-xss rounded-lg" style="font-size: 10pt;">
-                        <img src="./images/Member-Abhijit.jpg" />
-                        <div class="card-body">
-                            <h5 class="card-title"><span class="ti ti-user"></span> &nbsp; Abhijit Bhattacharya</h5>
-                            <p class="card-text">
-                                Royal Hospital for Children, Glasgow
-
-                                <br> <strong>  Senior Neonatal Clinical Fellow</strong>
-                                <a href="mailto:abhijit.bhattacharya@ggc.scot.nhs.uk">abhijit.bhattacharya@ggc.scot.nhs.uk</a>
-                            </p>
-
-                        </div>
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section id="activity" class="container">
+        <section id="member">
             <br />
             <br />
             <br />
-            <h3><strong> Our Activities!!</strong></h3>
-            <p style="text-align: justify;">
-                Since early 2022, NeoFOCUS-UK has been actively involved in several key activities to promote high-quality training and delivery of neonatal POCUS and integrated haemodynamic approaches in the UK
-            </p>
-            <p style="text-align: justify;">
-                -CPD & Peer Review: We host weekly online educational meetings attended by neonatal trainees, consultants, and international collaborators. These sessions include expert presentations, case discussions, and challenging cases where POCUS was helpful to guide bedside management
-            </p>
-            <p style="text-align: justify;">
-                Link for weekly Friday meeting via ZOOM: <br>
-                <a href="https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa">https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa</a>
-            </p>
-            <br>
-            <p style="text-align: justify;">
-                - Online Introductory Webinars: These webinars provide an excellent introduction to lung ultrasound.
-            </p>
-            <br>
-            <p style="text-align: justify;">
-                -National Neonatal Lung Ultrasound, Echocardiography, and <strong> Integrated Haemodynamics Conference and workshop. Last one was held in Glasgow in May 2023.</strong>
-            </p>
-            <p style="text-align: justify;">
-                -Workshop on Lung USS in partnership with the local Trusts.
-            </p>
 
-            <p style="text-align: justify;">
-                -Frameworks for Practice and guidelines: <br>
-                We have published frameworks for neonatal lung ultrasound in peer-reviewed journals.
-
-            </p>
-        </section>
-        <div class="container ">
-            <p style="text-align: justify;">
-                <iframe src="Document/Framework.pdf#page=1&zoom=100" width="100%" height="500px" frameborder="0"></iframe>
-
-
-            </p>
-        </div>
-        <br>
-        <div class="container">
-            <h3><strong> CPD & Peer Review</strong></h3>
-            <p style="text-align: justify;">
-                We host weekly online education meetings attended by neonatal trainees, consultants, and international collaborators. These sessions include expert presentations, case discussions, and challenging cases.
-            </p>
-            <p style="text-align: justify;">
-                Link for weekly Friday meeting via ZOOM: <br>
-                <a href="https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa">https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa</a>
-            </p>
-        </div>
-        <br>
-        <div class="feedback-wrapper  pb-5 pt-5">
             <div class="container">
+                <h3><strong>Our Executive Committee Members<br></strong></h3>
+
+                <div class="row" style="margin-bottom:10px;color:black;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Mahmoud.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr. Mahmoud Montasser,</span> is a  <span style="font-size: 15px; color: orangered;">Consultant Neonatologist at University Hospital Wishaw and a Transport Consultant Neonatologist for ScotSTAR's regional neonatal transport team in West of Scotland, UK. </span>
+                                        He serves as an Honorary Clinical Senior Lecturer at the University of Glasgow. His expertise includes Neonatologist Performed Echocardiography (NOPE), with a focus on neonatal hemodynamics, cardio-pulmonary vascular transition, functional echocardiography, and lung ultrasound as part of point-of-care ultrasonography (POCUS) in neonates.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom: 10px; color: black;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Neil.png" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;">Dr Neil Patel,</span> is a  <span style="font-size: 15px; color: orangered;">Consultant Neonatologist at the Royal Hospital for Children, Glasgow. He trained in neonatology at the Royal Children's Hospital, Melbourne, Australia and the Royal Hospital for Children, Glasgow, UK. </span>
+                                        He is a Senior NHS Research Scotland Fellow, Scottish Quality and Safety Fellow, and Clinical Innovation Lead for the West of Scotland Innovation Hub. Neil has specialist clinical and research interests in neonatal haemodynamic assessment and management, including in congenital diaphragmatic hernia. Neil leads local and international collaborations, including within the CDH Euro-consortium and International CDH Study Group.  His other interests include Family Integrated Care, and clinical innovation including asynchronous video for remote care and non-invasive physiological monitoring.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Anne.png" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;">Dr. Anne Marie Heuchen,</span>is a  <span style="font-size: 15px; color: orangered;">Consultant in neonatal medicine with the Royal Hospital for Children and Queen Elizabeth University Hospital, Glasgow. </span>
+                                        Dr. Heuchan has a strong interest in neonatal echocardiography, structural and haemodynamic assessment and its relationship to clinical interventions and the impact on cerebral perfusion (NIRS).
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Nim.png" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr. Nim Subhedar,</span> is a  <span style="font-size: 15px; color: orangered;">Consultant Neonatologist working at Liverpool Women’s Hospital, Honorary Lecturer at the University of Liverpool and Clinical Lead for the Cheshire & Merseyside Neonatal Network. </span>
+                                        He chairs the international registry in neonatal pulmonary hypertension (RePHiNe) project. Nim’s research interests include neonatal pulmonary hypertension, inhaled nitric oxide therapy, neonatal haemodynamics and echocardiography. He is a co-applicant on the UK multicentre NIHR-HTA funded Baby OSCAR trial into early selective treatment of patent ductus arteriosus. He led the first randomised controlled trial of inhaled nitric oxide in preterm neonates and previously chaired the European Inhaled Nitric Oxide Registry.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Jay.png" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;">Dr. Jay Banerjee,</span> is a  <span style="font-size: 15px; color: orangered;">Neonatal Consultant at Imperial College Healthcare NHS Trust and Honorary Senior Clinical Lecturer at Imperial College London's Institute of Reproductive and Developmental Biology, focuses on non-invasive research techniques for neonatal hemodynamics. </span>
+                                        He utilises machine learning to analyse physiological parameters and investigates the long-term cardiovascular outcomes of prematurity, supported by Imperial NIHR Biomedical Research Centre. With a keen interest in family integrated care research in neonatology, Banerjee is an integral part of the perinatology research group at the IRDB, contributing significantly to advancements in neonatal care and understanding.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Bikash.png" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr. Bikash Bhojnagarwala,</span> is a  <span style="font-size: 15px; color: orangered;">consultant Neonatologist at Medway NHS Foundation Trust. </span>
+                                        specialises in paediatric cardiology and is certified in congenital heart disease Echocardiography. His expertise encompasses Point of Care Ultrasound (POCUS) for lung, lines, and heart assessments, with integrated hemodynamics. As Trust Wellbeing Lead at Kent and Medway Medical School, he mentors undergraduate medical students. He is an active contributor to medical education, organises national paediatric cardiology conferences, instructs in ECHO and POCUS courses, and holds executive roles in professional groups. Dr Bhojnagarwala has completed several projects and presented at international conferences, focusing on neonatal and paediatric cardiology, showcasing his substantial passion in the field.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Anna.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr. Anna Milan,</span> is a  <span style="font-size: 15px; color: orangered;">Consultant Neonatologist at Evelina London Neonatal Unit (ELNU), part of Guy’s and St Thomas’ NHS Foundation Trust in London. </span>
+                                        completed paediatric training at the University of Padua in Italy and a PhD in Tissue Engineering in collaboration with the Institute of Child Health in London. Joining ELNU in 2016, she specialises in caring for infants with complex congenital and acquired conditions, providing support to their families. Dr. Milan also serves as the recruitment lead for junior medical staff, expanding her role to educate and mentor future generations. Trained in Functional Echo and Point of Care Ultrasound, she is an accredited trainer for paediatric lung ultrasound.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Anay.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr. Anay Kulkarni,</span> is a  <span style="font-size: 15px; color: orangered;">Consultant Neonatologist at St. George’s Hospital NHS Foundation Trust, London, and Honorary Consultant in Paediatric Cardiology at Royal Brompton and Harefield NHS Foundation Trust, boasts extensive training in Mumbai University, India,</span>
+                                        with subsequent specialisation in Neonatology and Paediatric Cardiology in London. Accredited with the European Certification in Congenital Heart Disease Echocardiography, he excels as an expert and teacher in Neonatal echocardiography having conducted over 2000 assessments. Leading the Neonatal Cardiology Service, he focuses on hemodynamic assessment, Patent Ductus Arteriosus, Pulmonary Hypertension, and Functional Echocardiography. Actively involved in POCUS program development, Dr. Kulkarni directs echocardiography courses and serves as faculty for Neonatal Echocardiography & Haemodynamics courses.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Geza.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr Geza Vass,</span> is a  <span style="font-size: 15px; color: orangered;">Consultant Neonatologist at John Radcliffe Hospital, Oxford, earned his Medical Degree at Semmelweis University of Medical Sciences, Budapest, Hungary.</span>
+                                        After research, he obtained a PhD in Respiratory Medicine and specialised in Pediatrics in Hungary. Subsequently, he moved to the UK, specialising further in Neonatal Medicine. Working in various tertiary neonatal centres, he honed his skills in functional echocardiography and point-of-care ultrasound scanning. Joining the Neo-Focus group in 2021, Dr Vass contributes his expertise to advancements in neonatal care and continues to expand his knowledge in specialised areas of neonatology.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+             
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Virginie.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr. Meau-Petit,</span> is an <span style="font-size: 15px; color: orangered;">experienced senior neonatologist, has extensive experience in paediatric and level 4 neonatal intensive care in Paris and London. </span>
+                                        Over the past two decades, she has specialised in neonatal and paediatric hemodynamics, earning a master's degree in 2016. A key advocate of neonatal lung ultrasound in the UK since 2014, she holds accreditation as a mentor by the British Intensive Care Society. Co-founding the neoFOCUS-UK group and leading the French group for paediatric lung ultrasound (GEPP), she emphasises a holistic, physiology-based approach to patient care. Dr. Meau-Petit's publications on heart, central lines, and lung ultrasound contribute to advancing individualised care by integrating clinical data with point-of-care ultrasound findings.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Ahmad.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr Ahmad Sherjil,</span> is a <span style="font-size: 15px; color: orangered;">consultant neonatologist in Victoria Hospital Kirkcaldy as well as Queen Elizabeth University Hospital Glasgow. </span>
+                                        He is one of the founding members of the group. He has wide experience and expertise in most aspects of neonatal point of care ultrasound including advanced lung ultrasound, neonatal functional/haemodynamic echocardiography and ultrasound facilitated PICC/umbilical catheter insertion and ETT placement. He has special interest in administering surfactant and managing difficult airways with Laryngeal Mask Airway. He has an ongoing contribution as instructor in lung ultrasound courses conducted by the group nationwide.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Abhijit.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr. Abhijit Bhattacharya,</span> is a <span style="font-size: 15px; color: orangered;">distinguished Neonatologist and Senior Clinical and Research Fellow at Queen Elizabeth University Hospital, Glasgow, possesses over a decade of experience in neonatal medicine.  </span>
+                                        Specializing in point-of-care ultrasound and neonatal echocardiography, he is a key member of the Scottish Neonatal Hemodynamic POCUS group and Mprove Academy. Dr. Bhattacharya leads training sessions on Lung Ultrasound and Neonatal Hemodynamic Ultrasound, crafting guidelines for clinical practices. As a dedicated research fellow, he explores Congenital Diaphragmatic Hernia complexities. His global impact is evident through teaching in Asia, contributing significantly to medical education, and conducting Point of Care Ultrasound workshops across UK units.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Arin.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr. Arin Mukherjee,</span> <span style="font-size: 15px; color: orangered;">took up the consultant post at Saint Mary’s Hospital in 2014 after completing higher specialist training (CCT in Neonatology) in the UK. </span>
+                                        His primary areas of expertise include functional echocardiography, regional circulation and neonatal haemodynamics. Dr Mukherjee holds a Senior Lecturer position with the University of Manchester and is the Divisional research lead for new-born services. Dr Mukherjee is accredited in Congenital Heart Disease Echocardiography by the European Association of Cardiovascular Imaging, endorsed by the European Society of Cardiology.
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" style="background-color: #ffffff;" href="#">
+
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="./images/Member-Harsha.jpg" />
+                                    </div>
+                                    <div class="col-md-9" style="text-align: justify;">
+                                        <span style="font-size: 15px;color: blue;"> Dr Harsha Gowda,</span> <span style="font-size: 15px; color: orangered;">Consultant Neonatologist at Birmingham Heartlands Hospital part of University Hospitals of Birmingham NHS trust. </span>
+                                        His expertise is Neonatal cardiology, echocardiography, haemodynamics, POCUS, preterm stabilisation, and surfactant administration. He is Training Programme Director for Neonatal education/teaching for West Midlands deanery. Dr Gowda organises and faculty in Neonatal POCUS study day, Neonatal ventilation workshop and regional ECHO meetings. He has led many audits, QIP’s and number of short research projects. He has done various conference presentations and publications in peer reviewed journals. He is also clinical tutor for junior specialist doctors at UHB and contributes to medical education
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="row">
 
-                    <div class="col-lg-12">
-                        <div class="feedback-slider owl-carousel owl-theme overflow-visible dot-none right-nav pb-4">
-                            <div class="owl-items text-center">
+
+
+
+                </div>
+            </div>
+        </section>
+
+           
+
+            <section id="activity" class="container">
+                <br />
+                <br />
+                <br />
+                <h3><strong> Our Activities!!</strong></h3>
+                <p style="text-align: justify;">
+                    Since early 2022, NeoFOCUS-UK has been actively involved in several key activities to promote high-quality training and delivery of neonatal POCUS and integrated haemodynamic approaches in the UK
+                </p>
+                <p style="text-align: justify;">
+                    -CPD & Peer Review: We host weekly online educational meetings attended by neonatal trainees, consultants, and international collaborators. These sessions include expert presentations, case discussions, and challenging cases where POCUS was helpful to guide bedside management
+                </p>
+                <p style="text-align: justify;">
+                    Link for weekly Friday meeting via ZOOM: <br>
+                    <a href="https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa">https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa</a>
+                </p>
+                <br>
+                <p style="text-align: justify;">
+                    - Online Introductory Webinars: These webinars provide an excellent introduction to lung ultrasound.
+                </p>
+                <br>
+                <p style="text-align: justify;">
+                    -National Neonatal Lung Ultrasound, Echocardiography, and <strong> Integrated Haemodynamics Conference and workshop. Last one was held in Glasgow in May 2023.</strong>
+                </p>
+                <p style="text-align: justify;">
+                    -Workshop on Lung USS in partnership with the local Trusts.
+                </p>
+
+                <p style="text-align: justify;">
+                    -Frameworks for Practice and guidelines: <br>
+                    <div class="list-group text-center">
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h4>
+                                        We have published frameworks for neonatal lung ultrasound in peer-reviewed journals.
+
+
+
+                                    </h4>
+
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="Document/Framework.pdf" target="_blank" style="cursor:pointer;text-decoration:none;">
+                                        <b style="float:right;">Read More</b>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                   
+                </p>
+            </section>
+         
+           
+            <div class="container">
+                <h3><strong> CPD & Peer Review</strong></h3>
+                <p style="text-align: justify;">
+                    We host weekly online education meetings attended by neonatal trainees, consultants, and international collaborators. These sessions include expert presentations, case discussions, and challenging cases.
+                </p>
+                <p style="text-align: justify;">
+                    Link for weekly Friday meeting via ZOOM: <br>
+                    <a href="https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa">https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa</a>
+                </p>
+            </div>
+            <br>
+            <div class="feedback-wrapper  pb-5 pt-5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="feedback-slider owl-carousel owl-theme overflow-visible dot-none right-nav pb-4">
+                                <div class="owl-items text-center">
+                                    <div class="owl-items text-center">
+                                        <div class="card   border-0 shadow-xss rounded-lg">
+                                            <img src="./images/Review-1.jpg" style="width: 90%;" />
+                                            <!--     <div class="card-body">
+                                         <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                        </div>  -->
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
                                 <div class="owl-items text-center">
                                     <div class="card   border-0 shadow-xss rounded-lg">
-                                        <img src="./images/Review-1.jpg" style="width: 90%;" />
+                                        <img src="./images/Review-2.jpg" style="width: 90%;" />
+                                        <!--     <div class="card-body">
+                                     <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                    </div>  -->
+
+
+                                    </div>
+                                </div>
+
+                                <div class="owl-items text-center">
+                                    <div class="card   border-0 shadow-xss rounded-lg">
+                                        <img src="./images/Review-3.jpg" style="width: 90%;" />
+                                        <!--     <div class="card-body">
+                                     <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                    </div>  -->
+
+
+                                    </div>
+                                </div>
+
+                                <div class="owl-items text-center">
+                                    <div class="card   border-0 shadow-xss rounded-lg">
+                                        <img src="./images/Review-4.jpg" style="width: 90%;" />
                                         <!--     <div class="card-body">
                                      <h5 class="card-title">Card title</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -477,603 +720,559 @@
                                 </div>
 
                             </div>
-
-                            <div class="owl-items text-center">
-                                <div class="card   border-0 shadow-xss rounded-lg">
-                                    <img src="./images/Review-2.jpg" style="width: 90%;" />
-                                    <!--     <div class="card-body">
-                                 <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-
-                                </div>  -->
-
-
-                                </div>
-                            </div>
-
-                            <div class="owl-items text-center">
-                                <div class="card   border-0 shadow-xss rounded-lg">
-                                    <img src="./images/Review-3.jpg" style="width: 90%;" />
-                                    <!--     <div class="card-body">
-                                 <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-
-                                </div>  -->
-
-
-                                </div>
-                            </div>
-
-                            <div class="owl-items text-center">
-                                <div class="card   border-0 shadow-xss rounded-lg">
-                                    <img src="./images/Review-4.jpg" style="width: 90%;" />
-                                    <!--     <div class="card-body">
-                                 <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-
-                                </div>  -->
-
-
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <section id="conference">
-            <br />
-            <br />
-            <br />
+            <section id="conference">
+                <br />
+                <br />
+                <br />
 
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="page-title style1 col-xl-6 col-lg-8 col-md-10 text-center mb-5">
-                        <h2 class="text-grey-900 fw-700 display1-size display2-md-size pb-3 mb-0 d-block">National Conference and workshop</h2>
-                        <p class="fw-300 font-xsss lh-28 text-grey-500">We organized a successful Neonatal Lung Ultrasound, Echocardiography, and <strong> Integrated Haemodynamics Course in Glasgow in May 2023</strong>, attended by <strong> delegates from over 17 countries.</strong></p>
-                    </div>
-                </div>
-
-
-                <p style="text-align: justify;">
-                    <iframe src="Document/NationalConference.pdf" width="100%" height="500px" frameborder="0"></iframe>
-
-
-                </p>
-
-                <br>
-            </div>
-
-            <div class="container">
-                <h3><strong> Workshop on Lung USS in partnership with Local Trust</strong></h3>
-                <p style="text-align: justify;">
-                    The NeoFocus-UK group has also conducted in-house training for neonatal team in various hospitals across UK
-                </p>
-                <p style="text-align: justify;">
-                    Lung USS workshop at James Cook University Hospital: 24th November 2022 <br>
-
-                </p>
-                <div class="row">
-
-                    <div class="col-lg-12">
-                        <div class="feedback-slider owl-carousel owl-theme overflow-visible dot-none right-nav pb-4">
-                            <div class="owl-items text-center">
-                                <div class="owl-items text-center">
-                                    <div class="card   border-0 shadow-xss rounded-lg">
-                                        <img src="./images/ussworkshop-1.jpg" style="width: 90%;" />
-                                        <!--     <div class="card-body">
-                                 <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-
-                                </div>  -->
-
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="owl-items text-center">
-                                <div class="card   border-0 shadow-xss rounded-lg">
-                                    <img src="./images/ussworkshop-2.jpg" style="width: 90%;" />
-                                    <!--     <div class="card-body">
-                             <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-
-                            </div>  -->
-
-
-                                </div>
-                            </div>
-
-                            <div class="owl-items text-center">
-                                <div class="card   border-0 shadow-xss rounded-lg">
-                                    <img src="./images/ussworkshop-3.jpg" style="width: 90%;" />
-                                    <!--     <div class="card-body">
-                             <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-
-                            </div>  -->
-
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p style="text-align: justify;">
-                            <strong>Medway Hospital in Kent- 27/04/2023 and 03/11/2023</strong>>
-                        </p>
-                        <div class="feedback-slider owl-carousel owl-theme overflow-visible dot-none right-nav pb-4">
-                            <div class="owl-items text-center">
-                                <div class="owl-items text-center">
-                                    <div class="card   border-0 shadow-xss rounded-lg">
-                                        <img src="./images/ussworkshop-4.jpg" style="width: 90%;" />
-                                        <!--     <div class="card-body">
-                                 <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-
-                                </div>  -->
-
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="container">
-            <h3><strong>Advancing NeoFOCUS-UK: A Proposal for Specialist Interest Group within BAPM</strong></h3>
-            <p style="text-align: justify;">
-                Building on our success, we have proposed establishing NeoFOCUS-UK as a <strong> Specialist Interest Group within </strong> British Association of Perinatal Medicine:
-            </p>
-            <p style="text-align: justify;">
-                Building on our accomplishments, we propose the establishment of NeoFOCUS-UK as a Specialist Interest Group (SIG) within the British Association of Perinatal Medicine (BAPM). <a href="https://www.bapm.org/" style="text-decoration:none;"> British Association of Perinatal Medicine | Home (bapm.org) </a> This initiative aligns with our mission to develop national training and clinical practice frameworks, involve the broader neonatology community, and promote our endeavours through BAPM's established channels.
-            </p>
-            <p style="text-align: justify;">
-                As a SIG, we propose to undertake various activities, including:
-                <ol>
-                    <li>
-                        <strong> 1. Organizational Structures and Frameworks:</strong> Developing organizational structures and frameworks for practice.
-                    </li>
-                    <li>
-                        <strong> 2. Guidelines:</strong> Crafting condition-specific guidelines, including neonatal lung ultrasound, integrated haemodynamic assessment, and POCUS for central line assessment.
-                    </li>
-                    <li>
-                        <strong> 3. Training: </strong> Creating a core curriculum, establishing training requirements, developing a robust process for credentialing, and delivering hands-on training courses.
-                    </li>
-                    <li>
-                        <strong> 4. Continuing Professional Development:</strong> Offering regular CPD and peer-review sessions for clinicians using POCUS and integrated haemodynamic skills.
-                    </li>
-                    <li>
-                        <strong> 5. Research and Quality Improvement: </strong> Engaging in research and quality improvement initiatives related to POCUS and integrated haemodynamics in neonatology.
-                    </li>
-                    <li>
-                        6. We also aim to include patient and family representatives, neonatal trainee representatives, and relevant specialist expertise.
-                    </li>
-                </ol>
-            </p>
-            <p style="text-align: justify;">
-                <strong>
-                    The membership of the SIG will encompass:
-                </strong>
-                <ol>
-                    <li>
-                        - NeoFOCUS-UK members who are also BAPM members.
-                    </li>
-                    <li>
-                        - BAPM members with relevant expertise or a specialist interest.
-                    </li>
-                    <li>
-                        - Patient and family representatives.
-                    </li>
-                    <li>
-                        - Neonatal trainee representatives.
-                    </li>
-                    <li>
-                        -Additionally, we will collaborate with experts in radiology, cardiology, adult and paediatric critical care, including PECSIG and CACTUS leadership, to develop the training curriculum and practice guidelines.
-                    </li>
-
-                </ol>
-            </p>
-
-            <p style="text-align: justify;">
-                By becoming a SIG within BAPM, we anticipate:
-                <ol>
-                    <li>
-                        <strong>- Engagement and Inclusion: </strong>  Involving the broader BAPM community in NeoFOCUS-UK's activities.
-                    </li>
-                    <li>
-                        <strong> - Promotion: </strong> Utilizing BAPM channels to promote our activities and outputs, particularly in training and frameworks.
-                    </li>
-                    <li>
-                        <strong> - Coordination: </strong> Receiving assistance from BAPM to coordinate NeoFOCUS-UK activities.
-                    </li>
-
-                    <li>
-                        <strong>  - Support at Meetings:</strong> Gaining support for NeoFOCUS-UK-led sessions at BAPM and RCPCH annual meetings.
-                    </li>
-                    <li>
-                        <strong> - Curriculum Inclusion:</strong> Working towards the inclusion of accredited POCUS and integrated haemodynamic training in the neonatal specialist curriculum.
-                    </li>
-                </ol>
-            </p>
-        </div>
-
-        <div class="container">
-
-            <h3><strong>Funding</strong></h3>
-            <p style="text-align: justify;">
-                NeoFOCUS-UK operates with a modest non-profit fund managed within Glasgow Children's Hospital Charity, providing a structured financial platform for future training courses and related activities.
-            </p>
-            <br>
-
-            <h3><strong>Contact Information</strong></h3>
-            <p style="text-align: justify;">
-                We welcome your questions and comments. For further information, please reach out to Dr. Mahmoud Montasser, Consultant Neonatologist at University Hospital Wishaw. <br>
-                Email: mahmoud.montasser@lanarkshire.scot.nhs.uk
-            </p>
-            <br>
-
-            <h3><strong>Join Us</strong></h3>
-            <p style="text-align: justify;">
-                Our goal is to revolutionize neonatal care in the UK by integrating POCUS into standard practice at all levels of care. We are excited to have you join us on this journey towards safer and more evidence-based neonatal medicine.
-            </p>
-            <br>
-
-            <h3><strong>Resources</strong></h3>
-            <p style="text-align: justify;">
-                Link for YouTube channel: <a href="https://www.youtube.com/channel/UCwx55me6_InHqYDWJNiZbUA" target="_blank"> https://www.youtube.com/channel/UCwx55me6_InHqYDWJNiZbUA</a>
-                <br>
-                Link to Join our Weekly Friday Meeting via  <a href="https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa" target="_blank"> https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa</a>
-
-                <br>
-                We look forward to a future where neonatal functional haemodynamics and POCUS become integral parts of neonatal care in the UK. Join us in making this vision a reality.
-            </p>
-            <br>
-            <h3><strong>Links to affiliated organisations:</strong></h3>
-            <p style="text-align: justify;">
-                NHRC: <a href="https://neonatalhemodynamics.com/" target="_blank"> https://neonatalhemodynamics.com/</a>
-                <br>
-                BAPM: <a href="https://www.bapm.org/" target="_blank"> https://www.bapm.org/</a>
-
-                <br>
-                ESPNIC: <a href=": https://www.espnic.eu/" target="_blank"> : https://www.espnic.eu/</a>
-                <br>
-                Glasgow Children’s Hospital Charity: <a href="https://www.glasgowchildrenshospitalcharity.org/" target="_blank"> https://www.glasgowchildrenshospitalcharity.org/</a>
-            </p>
-            <br>
-        </div>
-
-        <!--
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
-                        <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
-                            <div class="card-image w-100 mb-3">
-                                <a href="https://youtu.be/5s027N7tTdA" target="_blank" class="video-bttn position-relative d-block"><img src="images/Review-1.jpg" alt="image" class="w-100" /></a>
-                            </div>
-                            <div class="card-body pt-0">
-                                <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-danger d-inline-block text-danger mr-1">Develop</span>
-                                <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 370</span>
-                                <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="https://youtu.be/5s027N7tTdA" target="_blank" class="text-dark text-grey-900">Dr Neil Patel - Haemodynamics </a></h4>
-                                <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 23 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">87%</span></h6>
-
-                                <div class="progress mt-4 h5 w-100 mb-3">
-                                  <div class="progress-bar bg-info" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="73" style="width: 73%"></div>
-                                </div>
-                                <div class="star float-left text-left mb-0">
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
-                                </div>
-                                <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
-                        <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
-                            <div class="card-image w-100 mb-3">
-                                <a href="https://youtu.be/W7g416KE_Kk" target="_blank" class="video-bttn position-relative d-block"><img src="images/Review-2.jpg" alt="image" class="w-100" /></a>
-                            </div>
-                            <div class="card-body pt-0">
-                                <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-danger d-inline-block text-danger mr-1">Desinger</span>
-                                <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 450</span>
-                                <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="https://youtu.be/W7g416KE_Kk" target="_blank" class="text-dark text-grey-900">Dr Nim Subhidar- Pulmonary Hypertension - Back to basics </a></h4>
-                                <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 24 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">65%</span></h6>
-
-                                <div class="progress mt-4 h5 w-100 mb-3">
-                                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="96" style="width: 96%"></div>
-                                </div>
-                                <div class="star float-left text-left mb-0">
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
-                                </div>
-                                <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
-                        <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
-                            <div class="card-image w-100 mb-3">
-                                <a href="https://youtu.be/9ALYXFy9Pmk" class="video-bttn position-relative d-block" target="_blank"><img src="images/Review-3.jpg" alt="image" class="w-100" /></a>
-                            </div>
-                            <div class="card-body pt-0">
-                                <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-warning d-inline-block text-warning mr-1">Python</span>
-                                <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 670</span>
-                                <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="https://youtu.be/9ALYXFy9Pmk" target="_blank" class="text-dark text-grey-900">1-Normal Lung Ultrasound </a></h4>
-                                <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 32 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">75%</span></h6>
-
-                                <div class="progress mt-4 h5 w-100 mb-3">
-                                  <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75" style="width: 75%"></div>
-                                </div>
-                                <div class="star float-left text-left mb-0">
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
-                                </div>
-                                <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
-                        <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
-                            <div class="card-image w-100 mb-3">
-                                <a href="#" class="video-bttn position-relative d-block"><img src="images/Review-4.jpg" alt="image" class="w-100" /></a>
-                            </div>
-                            <div class="card-body pt-0">
-                                <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-warning d-inline-block text-warning mr-1">Python</span>
-                                <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 240</span>
-                                <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="#" class="text-dark text-grey-900">Complete Python Bootcamp From Zero to Hero in Python </a></h4>
-                                <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 32 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">96%</span></h6>
-
-                                <div class="progress mt-4 h5 w-100 mb-3">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="65" style="width: 65%"></div>
-                                </div>
-                                <div class="star float-left text-left mb-0">
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
-                                </div>
-                                <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
-                        <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
-                            <div class="card-image w-100 mb-3">
-                                <a href="#" class="video-bttn position-relative d-block"><img src="./images/v-2.png" alt="image" class="w-100" /></a>
-                            </div>
-                            <div class="card-body pt-0">
-                                <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-danger d-inline-block text-danger mr-1">Desinger</span>
-                                <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 40</span>
-                                <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="#" class="text-dark text-grey-900">Complete Python Bootcamp From Zero to Hero in Python </a></h4>
-                                <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 24 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">73%</span></h6>
-
-                                <div class="progress mt-4 h5 w-100 mb-3">
-                                  <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="87" style="width: 87%"></div>
-                                </div>
-                                <div class="star float-left text-left mb-0">
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
-                                </div>
-                                <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
-                        <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
-                            <div class="card-image w-100 mb-3">
-                                <a href="#" class="video-bttn position-relative d-block"><img src="./images/v-3.png" alt="image" class="w-100" /></a>
-                            </div>
-                            <div class="card-body pt-0">
-                                <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-success d-inline-block text-success mr-1">Bootstrap</span>
-                                <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 60</span>
-                                <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="#" class="text-dark text-grey-900">Java Programming Masterclass for Developers</a></h4>
-                                <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 24 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">73%</span></h6>
-
-                                <div class="progress mt-4 h5 w-100 mb-3">
-                                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="96" style="width: 96%"></div>
-                                </div>
-                                <div class="star float-left text-left mb-0">
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
-                                    <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
-                                </div>
-                                <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="how-to-work pb-lg--7">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="page-title style1 col-xl-8 col-lg-8 col-md-10 text-center mb-5">
-                            <h2 class="text-grey-900 fw-700 display1-size display2-md-size pb-3 mb-0 d-block">Diploma Training Programs
-                            </h2>
-                            <p class="fw-300 font-xsss lh-28 text-grey-500">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dol ad minim veniam, quis nostrud exercitation</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <div class="card border-0 mb-0 rounded-lg overflow-hidden live-stream bg-image-center bg-image-cover" style="background-image: url(./images/LUS-1-min.jpg);">
-                                <div class="card-body d-flex justify-content-start p-2 position-absolute top-0 w-100 bg-gradiant-top">
-                                    <figure class="avatar mb-0 mt-0 overflow-hidden"><img src="./images/user-1.png" alt="image" class="z-index-1 shadow-sm rounded-circle w40" /></figure><h5 class="text-white mt-1 fw-700 ml-2 z-index-1 ">Lecture <span class="d-block font-xsssss mt-1 fw-400 text-grey-300 z-index-1 ">2 hour</span></h5>
-                                    <span class="live-tag position-absolute right-15 mt-2 bg-danger p-2 z-index-1  rounded-lg text-white font-xsssss text-uppersace fw-700 ls-3">LIVE</span>
-                                </div>
-                                <div class="card-body text-center p-2 position-absolute w-100 bottom-0 bg-gradiant-bottom">
-                                    <a href="#" class="btn-round-xl d-md-inline-block d-none bg-blur m-3 mr-0 z-index-1"><i class="feather-grid text-white font-md"></i></a>
-                                    <a href="#" class="btn-round-xl d-md-inline-block d-none bg-blur m-3 z-index-1"><i class="feather-mic-off text-white font-md"></i></a>
-                                    <a href="#" class="btn-round-xxl bg-danger z-index-1"><i class="feather-phone-off text-white font-md"></i></a>
-                                    <a href="#" class="btn-round-xl d-md-inline-block d-none bg-blur m-3 z-index-1"><i class="ti-video-camera text-white font-md"></i></a>
-                                    <a href="#" class="btn-round-xl d-md-inline-block d-none bg-blur m-3 ml-0 z-index-1"><i class="ti-settings text-white font-md"></i></a>
-                                    <span class="p-2 bg-blur z-index-1 text-white fw-700 font-xssss rounded-lg right-15 position-absolute mb-4 bottom-0">44:00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10 mt-5">
+                    <h3><strong>National Conference and workshop</strong></h3>
+                   <br />
+                    <div class="list-group text-center">
+                        <div class="list-group-item">
                             <div class="row">
-                                <div class="col-lg-3 col-xs-6 col-sm-6">
-                                    <h2 class="display4-size display4-md-size fw-700 open-font mb-3">4.7</h2>
-                                    <div class="star d-block w-100 text-left">
-                                        <img src="./images/star.png" alt="star" class="w15" />
-                                        <img src="./images/star.png" alt="star" class="w15" />
-                                        <img src="./images/star.png" alt="star" class="w15" />
-                                        <img src="./images/star.png" alt="star" class="w15" />
-                                        <img src="./images/star-disable.png" alt="star" class="w15" />
+                                <div class="col-md-10">
+                                    <h4>
+                                        We organized a successful Neonatal Lung Ultrasound, Echocardiography, and <strong> Integrated Haemodynamics Course in Glasgow in May 2023</strong>, attended by <strong> delegates from over 17 countries.</strong>
+
+
+
+                                    </h4>
+
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="Document/NationalConference.pdf" target="_blank" style="cursor:pointer;text-decoration:none;">
+                                        <b style="float:right;">Read More</b>
+                                    </a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+                <div class="container">
+                    <h3><strong> Workshop on Lung USS in partnership with Local Trust</strong></h3>
+                    <p style="text-align: justify;">
+                        The NeoFocus-UK group has also conducted in-house training for neonatal team in various hospitals across UK
+                    </p>
+                    <p style="text-align: justify;">
+                        Lung USS workshop at James Cook University Hospital: 24th November 2022 <br>
+
+                    </p>
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="feedback-slider owl-carousel owl-theme overflow-visible dot-none right-nav pb-4">
+                                <div class="owl-items text-center">
+                                    <div class="owl-items text-center">
+                                        <div class="card   border-0 shadow-xss rounded-lg">
+                                            <img src="./images/ussworkshop-1.jpg" style="width: 90%;" />
+                                            <!--     <div class="card-body">
+                                         <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                        </div>  -->
+
+
+                                        </div>
                                     </div>
-                                    <h4 class="font-xssss text-grey-900 fw-700 mt-2">433 rating Based</h4>
+
                                 </div>
 
-                                <div class="col-lg-3 col-xs-6 col-sm-6">
-                                    <h2 class="display4-size display4-md-size fw-700 open-font mb-3">210<span class="font-xxl">%</span> <i class="feather-arrow-up-right text-success font-xl"></i></h2>
-                                    <h4 class="font-xssss text-grey-500 fw-600 mt-2"> 433 rating</h4>
-                                    <h4 class="font-xssss text-grey-900 fw-700 mt-2">Increase in revenue</h4>
+                                <div class="owl-items text-center">
+                                    <div class="card   border-0 shadow-xss rounded-lg">
+                                        <img src="./images/ussworkshop-2.jpg" style="width: 90%;" />
+                                        <!--     <div class="card-body">
+                                     <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                    </div>  -->
+
+
+                                    </div>
                                 </div>
 
-                                <div class="col-lg-3 col-xs-6 col-sm-6">
-                                    <h2 class="display4-size display4-md-size fw-700 open-font mb-3">20<span class="font-xxl">%</span> <i class="feather-arrow-down-right text-danger font-xl"></i></h2>
-                                    <h4 class="font-xssss text-grey-500 fw-600 mt-2"> 433 rating</h4>
-                                    <h4 class="font-xssss text-grey-900 fw-700 mt-2">Increase in revenue</h4>
+                                <div class="owl-items text-center">
+                                    <div class="card   border-0 shadow-xss rounded-lg">
+                                        <img src="./images/ussworkshop-3.jpg" style="width: 90%;" />
+                                        <!--     <div class="card-body">
+                                     <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                    </div>  -->
+
+
+                                    </div>
                                 </div>
 
-                                <div class="col-lg-3 col-xs-6 col-sm-6">
-                                    <h2 class="display4-size display4-md-size fw-700 open-font mb-3">43K<span class="font-xxl">+</span> <i class="feather-arrow-up-right text-success font-xl"></i></h2>
-                                    <h4 class="font-xssss text-grey-500 fw-600 mt-2"> 433 rating</h4>
-                                    <h4 class="font-xssss text-grey-900 fw-700 mt-2">Increase in revenue</h4>
-                                </div>
+
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p style="text-align: justify;">
+                                <strong>Medway Hospital in Kent- 27/04/2023 and 03/11/2023</strong>>
+                            </p>
+                            <div class="feedback-slider owl-carousel owl-theme overflow-visible dot-none right-nav pb-4">
+                                <div class="owl-items text-center">
+                                    <div class="owl-items text-center">
+                                        <div class="card   border-0 shadow-xss rounded-lg">
+                                            <img src="./images/ussworkshop-4.jpg" style="width: 90%;" />
+                                            <!--     <div class="card-body">
+                                         <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                                        </div>  -->
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
 
 
 
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-    -->
-
-
-
-
-
-
-
-
-
-        <!-- footer wrapper -->
-        <div class="footer-wrapper mt-0 bg-white">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-4 col-sm-9 col-xs-12 md-mb-2">
-                                <a href="home.html">
-                                    <h1 class="fredoka-font ls-3 fw-700 text-current font-xxl">
-                                        <img src="images/Logo_Color.png" style="width: 100px;">
-                                    </h1>
-                                </a>
-                                <p class="w-100 mt-5">41 madison ave, floor 24 new work, <br />YY 22000229 <br /> support@testingmail.com</p>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item mr-3"><a href="#"><i class="ti-facebook font-sm"></i></a></li>
-                                    <li class="list-inline-item mr-3"><a href="#"><i class="ti-twitter-alt font-sm"></i></a></li>
-                                    <li class="list-inline-item mr-3"><a href="#"><i class="ti-linkedin font-sm"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="ti-instagram font-sm"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-lg-2 col-sm-3 col-xs-6 md-mb-2">
-                                <h5>Language</h5>
-                                <ul>
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">Spanish</a></li>
-                                    <li><a href="#">Arab</a></li>
-                                    <li><a href="#">Urdu</a></li>
-                                    <li><a href="#">Brazil</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
-                                <h5>Channel</h5>
-                                <ul>
-                                    <li><a href="#">Makeup</a></li>
-                                    <li><a href="#">Dresses</a></li>
-                                    <li><a href="#">Girls</a></li>
-                                    <li><a href="#">Sandals</a></li>
-                                    <li><a href="#">Headphones</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
-                                <h5>About</h5>
-                                <ul>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Term of use</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Feedback</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
-                                <h5 class="mb-3">Office</h5>
-                                <p class="w-100">41 madison ave, floor 24 new work, NY 10010 <br />1-877-932-7111</p>
-                                <p class="w-100">41 madison ave, floor 24 new work, NY 10010 <br />1-877-932-7111</p>
+                <h3><strong>Advancing NeoFOCUS-UK: A Proposal for Specialist Interest Group within BAPM</strong></h3>
+                <p style="text-align: justify;">
+                    Building on our success, we have proposed establishing NeoFOCUS-UK as a <strong> Specialist Interest Group within </strong> British Association of Perinatal Medicine:
+                </p>
+                <p style="text-align: justify;">
+                    Building on our accomplishments, we propose the establishment of NeoFOCUS-UK as a Specialist Interest Group (SIG) within the British Association of Perinatal Medicine (BAPM). <a href="https://www.bapm.org/" style="text-decoration:none;"> British Association of Perinatal Medicine | Home (bapm.org) </a> This initiative aligns with our mission to develop national training and clinical practice frameworks, involve the broader neonatology community, and promote our endeavours through BAPM's established channels.
+                </p>
+                <p style="text-align: justify;">
+                    As a SIG, we propose to undertake various activities, including:
+                    <ol>
+                        <li>
+                            <strong> 1. Organizational Structures and Frameworks:</strong> Developing organizational structures and frameworks for practice.
+                        </li>
+                        <li>
+                            <strong> 2. Guidelines:</strong> Crafting condition-specific guidelines, including neonatal lung ultrasound, integrated haemodynamic assessment, and POCUS for central line assessment.
+                        </li>
+                        <li>
+                            <strong> 3. Training: </strong> Creating a core curriculum, establishing training requirements, developing a robust process for credentialing, and delivering hands-on training courses.
+                        </li>
+                        <li>
+                            <strong> 4. Continuing Professional Development:</strong> Offering regular CPD and peer-review sessions for clinicians using POCUS and integrated haemodynamic skills.
+                        </li>
+                        <li>
+                            <strong> 5. Research and Quality Improvement: </strong> Engaging in research and quality improvement initiatives related to POCUS and integrated haemodynamics in neonatology.
+                        </li>
+                        <li>
+                            6. We also aim to include patient and family representatives, neonatal trainee representatives, and relevant specialist expertise.
+                        </li>
+                    </ol>
+                </p>
+                <p style="text-align: justify;">
+                    <strong>
+                        The membership of the SIG will encompass:
+                    </strong>
+                    <ol>
+                        <li>
+                            - NeoFOCUS-UK members who are also BAPM members.
+                        </li>
+                        <li>
+                            - BAPM members with relevant expertise or a specialist interest.
+                        </li>
+                        <li>
+                            - Patient and family representatives.
+                        </li>
+                        <li>
+                            - Neonatal trainee representatives.
+                        </li>
+                        <li>
+                            -Additionally, we will collaborate with experts in radiology, cardiology, adult and paediatric critical care, including PECSIG and CACTUS leadership, to develop the training curriculum and practice guidelines.
+                        </li>
+
+                    </ol>
+                </p>
+
+                <p style="text-align: justify;">
+                    By becoming a SIG within BAPM, we anticipate:
+                    <ol>
+                        <li>
+                            <strong>- Engagement and Inclusion: </strong>  Involving the broader BAPM community in NeoFOCUS-UK's activities.
+                        </li>
+                        <li>
+                            <strong> - Promotion: </strong> Utilizing BAPM channels to promote our activities and outputs, particularly in training and frameworks.
+                        </li>
+                        <li>
+                            <strong> - Coordination: </strong> Receiving assistance from BAPM to coordinate NeoFOCUS-UK activities.
+                        </li>
+
+                        <li>
+                            <strong>  - Support at Meetings:</strong> Gaining support for NeoFOCUS-UK-led sessions at BAPM and RCPCH annual meetings.
+                        </li>
+                        <li>
+                            <strong> - Curriculum Inclusion:</strong> Working towards the inclusion of accredited POCUS and integrated haemodynamic training in the neonatal specialist curriculum.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+
+            <div class="container">
+
+                <h3><strong>Funding</strong></h3>
+                <p style="text-align: justify;">
+                    NeoFOCUS-UK operates with a modest non-profit fund managed within Glasgow Children's Hospital Charity, providing a structured financial platform for future training courses and related activities.
+                </p>
+                <br>
+
+                <h3><strong>Contact Information</strong></h3>
+                <p style="text-align: justify;">
+                    We welcome your questions and comments. For further information, please reach out to Dr. Mahmoud Montasser, Consultant Neonatologist at University Hospital Wishaw. <br>
+                    Email: mahmoud.montasser@lanarkshire.scot.nhs.uk
+                </p>
+                <br>
+
+                <h3><strong>Join Us</strong></h3>
+                <p style="text-align: justify;">
+                    Our goal is to revolutionize neonatal care in the UK by integrating POCUS into standard practice at all levels of care. We are excited to have you join us on this journey towards safer and more evidence-based neonatal medicine.
+                </p>
+                <br>
+
+                <h3><strong>Resources</strong></h3>
+                <p style="text-align: justify;">
+                    Link for YouTube channel: <a href="https://www.youtube.com/channel/UCwx55me6_InHqYDWJNiZbUA" target="_blank"> https://www.youtube.com/channel/UCwx55me6_InHqYDWJNiZbUA</a>
+                    <br>
+                    Link to Join our Weekly Friday Meeting via  <a href="https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa" target="_blank"> https://us02web.zoom.us/meeting/register/tZ0scuCqrDstGNwIgM9nzxYcR5We7zVvfvUa</a>
+
+                    <br>
+                    We look forward to a future where neonatal functional haemodynamics and POCUS become integral parts of neonatal care in the UK. Join us in making this vision a reality.
+                </p>
+                <br>
+                <h3><strong>Links to affiliated organisations:</strong></h3>
+                <p style="text-align: justify;">
+                    NHRC: <a href="https://neonatalhemodynamics.com/" target="_blank"> https://neonatalhemodynamics.com/</a>
+                    <br>
+                    BAPM: <a href="https://www.bapm.org/" target="_blank"> https://www.bapm.org/</a>
+
+                    <br>
+                    ESPNIC: <a href=": https://www.espnic.eu/" target="_blank"> : https://www.espnic.eu/</a>
+                    <br>
+                    Glasgow Children’s Hospital Charity: <a href="https://www.glasgowchildrenshospitalcharity.org/" target="_blank"> https://www.glasgowchildrenshospitalcharity.org/</a>
+                </p>
+                <br>
+            </div>
+
+            <!--
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
+                            <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
+                                <div class="card-image w-100 mb-3">
+                                    <a href="https://youtu.be/5s027N7tTdA" target="_blank" class="video-bttn position-relative d-block"><img src="images/Review-1.jpg" alt="image" class="w-100" /></a>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-danger d-inline-block text-danger mr-1">Develop</span>
+                                    <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 370</span>
+                                    <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="https://youtu.be/5s027N7tTdA" target="_blank" class="text-dark text-grey-900">Dr Neil Patel - Haemodynamics </a></h4>
+                                    <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 23 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">87%</span></h6>
+
+                                    <div class="progress mt-4 h5 w-100 mb-3">
+                                      <div class="progress-bar bg-info" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="73" style="width: 73%"></div>
+                                    </div>
+                                    <div class="star float-left text-left mb-0">
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
+                                    </div>
+                                    <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="middle-footer mt-5 pt-4"></div>
+
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
+                            <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
+                                <div class="card-image w-100 mb-3">
+                                    <a href="https://youtu.be/W7g416KE_Kk" target="_blank" class="video-bttn position-relative d-block"><img src="images/Review-2.jpg" alt="image" class="w-100" /></a>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-danger d-inline-block text-danger mr-1">Desinger</span>
+                                    <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 450</span>
+                                    <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="https://youtu.be/W7g416KE_Kk" target="_blank" class="text-dark text-grey-900">Dr Nim Subhidar- Pulmonary Hypertension - Back to basics </a></h4>
+                                    <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 24 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">65%</span></h6>
+
+                                    <div class="progress mt-4 h5 w-100 mb-3">
+                                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="96" style="width: 96%"></div>
+                                    </div>
+                                    <div class="star float-left text-left mb-0">
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
+                                    </div>
+                                    <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
+                            <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
+                                <div class="card-image w-100 mb-3">
+                                    <a href="https://youtu.be/9ALYXFy9Pmk" class="video-bttn position-relative d-block" target="_blank"><img src="images/Review-3.jpg" alt="image" class="w-100" /></a>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-warning d-inline-block text-warning mr-1">Python</span>
+                                    <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 670</span>
+                                    <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="https://youtu.be/9ALYXFy9Pmk" target="_blank" class="text-dark text-grey-900">1-Normal Lung Ultrasound </a></h4>
+                                    <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 32 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">75%</span></h6>
+
+                                    <div class="progress mt-4 h5 w-100 mb-3">
+                                      <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75" style="width: 75%"></div>
+                                    </div>
+                                    <div class="star float-left text-left mb-0">
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
+                                    </div>
+                                    <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
+                            <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
+                                <div class="card-image w-100 mb-3">
+                                    <a href="#" class="video-bttn position-relative d-block"><img src="images/Review-4.jpg" alt="image" class="w-100" /></a>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-warning d-inline-block text-warning mr-1">Python</span>
+                                    <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 240</span>
+                                    <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="#" class="text-dark text-grey-900">Complete Python Bootcamp From Zero to Hero in Python </a></h4>
+                                    <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 32 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">96%</span></h6>
+
+                                    <div class="progress mt-4 h5 w-100 mb-3">
+                                      <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="65" style="width: 65%"></div>
+                                    </div>
+                                    <div class="star float-left text-left mb-0">
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
+                                    </div>
+                                    <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
+                            <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
+                                <div class="card-image w-100 mb-3">
+                                    <a href="#" class="video-bttn position-relative d-block"><img src="./images/v-2.png" alt="image" class="w-100" /></a>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-danger d-inline-block text-danger mr-1">Desinger</span>
+                                    <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 40</span>
+                                    <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="#" class="text-dark text-grey-900">Complete Python Bootcamp From Zero to Hero in Python </a></h4>
+                                    <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 24 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">73%</span></h6>
+
+                                    <div class="progress mt-4 h5 w-100 mb-3">
+                                      <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="87" style="width: 87%"></div>
+                                    </div>
+                                    <div class="star float-left text-left mb-0">
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
+                                    </div>
+                                    <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
+                            <div class="card course-card w-100 p-0 shadow-xss border-0 rounded-lg overflow-hidden mr-1">
+                                <div class="card-image w-100 mb-3">
+                                    <a href="#" class="video-bttn position-relative d-block"><img src="./images/v-3.png" alt="image" class="w-100" /></a>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <span class="font-xsssss fw-700 pl-3 pr-3 lh-32 text-uppercase rounded-lg ls-2 alert-success d-inline-block text-success mr-1">Bootstrap</span>
+                                    <span class="font-xss fw-700 pl-3 pr-3 ls-2 lh-32 d-inline-block text-success float-right"><span class="font-xsssss">$</span> 60</span>
+                                    <h4 class="fw-700 font-xss mt-3 lh-28 mt-0"><a href="#" class="text-dark text-grey-900">Java Programming Masterclass for Developers</a></h4>
+                                    <h6 class="font-xssss text-grey-500 fw-600 ml-0 mt-2"> 24 Lesson  <span class="float-right mt-1 font-xssss text-grey-500">73%</span></h6>
+
+                                    <div class="progress mt-4 h5 w-100 mb-3">
+                                      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="96" style="width: 96%"></div>
+                                    </div>
+                                    <div class="star float-left text-left mb-0">
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star.png" alt="star" class="w10 mr-1 float-left" />
+                                        <img src="./images/star-disable.png" alt="star" class="w10 float-left mr-2" />
+                                    </div>
+                                    <p class="review-link mt-0 font-xssss float-right mb-2 fw-500 text-grey-500 lh-3"> 2 customer review</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-12 lower-footer pt-0"></div>
-                    <div class="col-sm-6 col-xs-12">
-                        <p class="copyright-text">© 2021 copyright. All rights reserved.</p>
+                </div>
+
+
+
+                <div class="how-to-work pb-lg--7">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="page-title style1 col-xl-8 col-lg-8 col-md-10 text-center mb-5">
+                                <h2 class="text-grey-900 fw-700 display1-size display2-md-size pb-3 mb-0 d-block">Diploma Training Programs
+                                </h2>
+                                <p class="fw-300 font-xsss lh-28 text-grey-500">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dol ad minim veniam, quis nostrud exercitation</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="card border-0 mb-0 rounded-lg overflow-hidden live-stream bg-image-center bg-image-cover" style="background-image: url(./images/LUS-1-min.jpg);">
+                                    <div class="card-body d-flex justify-content-start p-2 position-absolute top-0 w-100 bg-gradiant-top">
+                                        <figure class="avatar mb-0 mt-0 overflow-hidden"><img src="./images/user-1.png" alt="image" class="z-index-1 shadow-sm rounded-circle w40" /></figure><h5 class="text-white mt-1 fw-700 ml-2 z-index-1 ">Lecture <span class="d-block font-xsssss mt-1 fw-400 text-grey-300 z-index-1 ">2 hour</span></h5>
+                                        <span class="live-tag position-absolute right-15 mt-2 bg-danger p-2 z-index-1  rounded-lg text-white font-xsssss text-uppersace fw-700 ls-3">LIVE</span>
+                                    </div>
+                                    <div class="card-body text-center p-2 position-absolute w-100 bottom-0 bg-gradiant-bottom">
+                                        <a href="#" class="btn-round-xl d-md-inline-block d-none bg-blur m-3 mr-0 z-index-1"><i class="feather-grid text-white font-md"></i></a>
+                                        <a href="#" class="btn-round-xl d-md-inline-block d-none bg-blur m-3 z-index-1"><i class="feather-mic-off text-white font-md"></i></a>
+                                        <a href="#" class="btn-round-xxl bg-danger z-index-1"><i class="feather-phone-off text-white font-md"></i></a>
+                                        <a href="#" class="btn-round-xl d-md-inline-block d-none bg-blur m-3 z-index-1"><i class="ti-video-camera text-white font-md"></i></a>
+                                        <a href="#" class="btn-round-xl d-md-inline-block d-none bg-blur m-3 ml-0 z-index-1"><i class="ti-settings text-white font-md"></i></a>
+                                        <span class="p-2 bg-blur z-index-1 text-white fw-700 font-xssss rounded-lg right-15 position-absolute mb-4 bottom-0">44:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 mt-5">
+                                <div class="row">
+                                    <div class="col-lg-3 col-xs-6 col-sm-6">
+                                        <h2 class="display4-size display4-md-size fw-700 open-font mb-3">4.7</h2>
+                                        <div class="star d-block w-100 text-left">
+                                            <img src="./images/star.png" alt="star" class="w15" />
+                                            <img src="./images/star.png" alt="star" class="w15" />
+                                            <img src="./images/star.png" alt="star" class="w15" />
+                                            <img src="./images/star.png" alt="star" class="w15" />
+                                            <img src="./images/star-disable.png" alt="star" class="w15" />
+                                        </div>
+                                        <h4 class="font-xssss text-grey-900 fw-700 mt-2">433 rating Based</h4>
+                                    </div>
+
+                                    <div class="col-lg-3 col-xs-6 col-sm-6">
+                                        <h2 class="display4-size display4-md-size fw-700 open-font mb-3">210<span class="font-xxl">%</span> <i class="feather-arrow-up-right text-success font-xl"></i></h2>
+                                        <h4 class="font-xssss text-grey-500 fw-600 mt-2"> 433 rating</h4>
+                                        <h4 class="font-xssss text-grey-900 fw-700 mt-2">Increase in revenue</h4>
+                                    </div>
+
+                                    <div class="col-lg-3 col-xs-6 col-sm-6">
+                                        <h2 class="display4-size display4-md-size fw-700 open-font mb-3">20<span class="font-xxl">%</span> <i class="feather-arrow-down-right text-danger font-xl"></i></h2>
+                                        <h4 class="font-xssss text-grey-500 fw-600 mt-2"> 433 rating</h4>
+                                        <h4 class="font-xssss text-grey-900 fw-700 mt-2">Increase in revenue</h4>
+                                    </div>
+
+                                    <div class="col-lg-3 col-xs-6 col-sm-6">
+                                        <h2 class="display4-size display4-md-size fw-700 open-font mb-3">43K<span class="font-xxl">+</span> <i class="feather-arrow-up-right text-success font-xl"></i></h2>
+                                        <h4 class="font-xssss text-grey-500 fw-600 mt-2"> 433 rating</h4>
+                                        <h4 class="font-xssss text-grey-900 fw-700 mt-2">Increase in revenue</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-xs-12 text-right">
-                        <p class="copyright-text float-right">Design by <a href="#" class="">Sigmentoo</a></p>
+                </div>
+
+        -->
+            <!-- footer wrapper -->
+            <div class="footer-wrapper mt-0 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-4 col-sm-9 col-xs-12 md-mb-2">
+                                    <a href="home.html">
+                                        <h1 class="fredoka-font ls-3 fw-700 text-current font-xxl">
+                                            <img src="images/Logo_Color.png" style="width: 100px;">
+                                        </h1>
+                                    </a>
+                                    <p class="w-100 mt-5">41 madison ave, floor 24 new work, <br />YY 22000229 <br /> support@testingmail.com</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item mr-3"><a href="#"><i class="ti-facebook font-sm"></i></a></li>
+                                        <li class="list-inline-item mr-3"><a href="#"><i class="ti-twitter-alt font-sm"></i></a></li>
+                                        <li class="list-inline-item mr-3"><a href="#"><i class="ti-linkedin font-sm"></i></a></li>
+                                        <li class="list-inline-item"><a href="#"><i class="ti-instagram font-sm"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-3 col-xs-6 md-mb-2">
+                                    <h5>Language</h5>
+                                    <ul>
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Spanish</a></li>
+                                        <li><a href="#">Arab</a></li>
+                                        <li><a href="#">Urdu</a></li>
+                                        <li><a href="#">Brazil</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+                                    <h5>Channel</h5>
+                                    <ul>
+                                        <li><a href="#">Makeup</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Girls</a></li>
+                                        <li><a href="#">Sandals</a></li>
+                                        <li><a href="#">Headphones</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+                                    <h5>About</h5>
+                                    <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Term of use</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Feedback</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-sm-4 col-xs-6">
+                                    <h5 class="mb-3">Office</h5>
+                                    <p class="w-100">41 madison ave, floor 24 new work, NY 10010 <br />1-877-932-7111</p>
+                                    <p class="w-100">41 madison ave, floor 24 new work, NY 10010 <br />1-877-932-7111</p>
+                                </div>
+                            </div>
+                            <div class="middle-footer mt-5 pt-4"></div>
+                        </div>
+                        <div class="col-sm-12 lower-footer pt-0"></div>
+                        <div class="col-sm-6 col-xs-12">
+                            <p class="copyright-text">© 2021 copyright. All rights reserved.</p>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 text-right">
+                            <p class="copyright-text float-right">Design by <a href="#" class="">Sigmentoo</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- footer wrapper -->
+            <!-- footer wrapper -->
 
     </div>
 
