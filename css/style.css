@@ -13324,11 +13324,17 @@ body:not(.theme-full) .main-content .middle-sidebar-bottom.header-padding {
 }
 @media only screen and (max-width: 992px) {
   .header-wrapper .nav-menu li {
-    padding: 15px 0;
+    padding: 7px 0;
     text-align: left;
     width: 100%;
     margin: 0;
   }
+
+  #hometab {
+    padding-top: 35px;
+  
+  }
+
 }
 .header-wrapper .nav-menu li:hover .dropdown-menu {
   opacity: 1;
@@ -13414,7 +13420,7 @@ body:not(.theme-full) .main-content .middle-sidebar-bottom.header-padding {
 @media only screen and (max-width: 992px) {
   .header-wrapper .nav-menu li a i {
     float: right;
-    line-height: 22px;
+    line-height: 5px;
     margin-right: 10px;
   }
 }
