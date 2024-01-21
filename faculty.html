@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NeoFocus - Neonatal Functional Haemodynamics and Point of Care Ultrasound</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="contents/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .py-2::-webkit-scrollbar {
+            width: 6px;
+            opacity: 1px;
+            /* width of the entire scrollbar */
+        }
+
+        .py-2::-webkit-scrollbar-track {
+            background: rgb(236, 236, 236);
+            opacity: 1px;
+            /* color of the tracking area */
+        }
+
+        .py-2::-webkit-scrollbar-thumb {
+            background-color: rgb(104, 104, 104);
+            /* color of the scroll thumb */
+            border-radius: 20px;
+            /* roundness of the scroll thumb */
+            border: 5px solid;
+            opacity: 1px;
+            /* creates padding around scroll thumb */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+                    <small class="me-3 text-white-50"><a href="#"><i
+                                class="fas fa-map-marker-alt me-2 text-secondary"></i></a>UK</small>
+                    <small class="me-3 text-white-50"><a href="#"><i
+                                class="fas fa-envelope me-2 text-secondary"></i></a>neofocusuk@gmail.com</small>
+                </div>
+                <div id="note" class="text-secondary d-none d-xl-flex"><small>Neonatal Functional haemodynamics and
+                        point Of Care UltraSound</small></div>
+                <div class="top-link">
+                    <a href="https://www.youtube.com/channel/UCwx55me6_InHqYDWJNiZbUA" target="_blank"
+                        class="nav-fill btn" style="background-color: red;color: white;"><i
+                            class="fa fa-youtube-play" > </i>&nbsp; YouTube</a>
+                    <a href="https://twitter.com/" target="_blank"
+                        class="bg-primary nav-fill btn " style="color: white;"><img src="img/x-twitter.png"
+                            style="width: 16px;height: 16px;" /> &nbsp;Twitter </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/Logo_Color.png"
+                        style="width: 120px;z-index: 1;position: relative;margin-bottom: -40px;" />
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="faculty.html" class="nav-item nav-link active">Faculties</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Activity</a>
+                            <div class="dropdown-menu rounded">
+                                <a href="webinar.html" class="dropdown-item">webinars</a>
+                                <a href="workshop.html" class="dropdown-item">workshops</a>
+                                <a href="testimonial.html" class="dropdown-item">Resource</a>
+
+                            </div>
+                        </div>
+                        <a href="vision.html" class="nav-item nav-link">Vision</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shirink-0">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        <a href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSf8VHY_suOeOQmgNc18MEsQ9brmx9pTce1ACGfEJINxuKt51g/viewform?usp=pp_url"
+                            class="position-relative animated tada infinite" target="_blank">
+                            <i class="fa fa-wpforms text-white fa-2x"></i>
+
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column pe-4">
+                        <span class="text-white-50">Registration form</span>
+                        <span class="text-secondary">to Join us</span>
+                    </div>
+                    <!-- <div class="d-flex align-items-center justify-content-center ms-4 ">
+                            <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                        </div> -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4 animated slideInDown">Our Faculties</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>                
+                    <li class="breadcrumb-item" aria-current="page">Faculty</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- our Faculty Start -->
+
+    <div class="container-fluid blog py-5 mb-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Our Faculties</h5>
+                <h1>Faculty List</h1>
+            </div>
+          
+        </div>
+    </div>
+    <div class="container-fluid blog py-5 mb-5">
+        <div class="container">
+       
+            <div class="row g-5 justify-content-center" style="margin-bottom:20px;">
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s" >
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Mahmoud.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Mahmoud Montasser</h5>
+                           
+                            <p class="py-2 scroller" style="text-align: justify;height: 300px;overflow: auto;">
+                                Consultant Neonatologist at
+                                University Hospital Wishaw and a Transport Consultant Neonatologist for
+                                ScotSTAR's regional neonatal transport team in West of Scotland, UK. </span>
+                                He serves as an Honorary Clinical Senior Lecturer at the University of Glasgow.
+                                His expertise includes Neonatologist Performed Echocardiography (NOPE), with a
+                                focus on neonatal hemodynamics, cardio-pulmonary vascular transition, functional
+                                echocardiography, and lung ultrasound as part of point-of-care ultrasonography
+                                (POCUS) in neonates.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Neil.png"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr Neil Patel</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                Consultant Neonatologist at the
+                                Royal Hospital for Children, Glasgow. He trained in neonatology at the Royal
+                                Children's Hospital, Melbourne, Australia and the Royal Hospital for
+                                Children, Glasgow, UK.
+
+                                He is a Senior NHS Research Scotland Fellow, Scottish Quality and Safety Fellow,
+                                and Clinical Innovation Lead for the West of Scotland Innovation Hub. Neil has
+                                specialist clinical and research interests in neonatal haemodynamic assessment
+                                and management, including in congenital diaphragmatic hernia. Neil leads local
+                                and international collaborations, including within the CDH Euro-consortium and
+                                International CDH Study Group. His other interests include Family Integrated
+                                Care, and clinical innovation including asynchronous video for remote care and
+                                non-invasive physiological monitoring.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s" >
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatal </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Anne.png"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Anne Marie Heuchen</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                Consultant in neonatal medicine
+                                with the Royal Hospital for Children and Queen Elizabeth University
+                                Hospital, Glasgow.
+
+                                Dr. Heuchan has a strong interest in neonatal echocardiography, structural and
+                                haemodynamic assessment and its relationship to clinical interventions and the
+                                impact on cerebral perfusion (NIRS).
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Nim.png"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Nim Subhedar</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                <span>Consultant Neonatologist working
+                                    at Liverpool Women’s Hospital, Honorary Lecturer at the University of
+                                    Liverpool and Clinical Lead for the Cheshire &amp; Merseyside Neonatal Network.
+                                </span>
+                                He chairs the international registry in neonatal pulmonary hypertension
+                                (RePHiNe) project. Nim’s research interests include neonatal pulmonary
+                                hypertension, inhaled nitric oxide therapy, neonatal haemodynamics and
+                                echocardiography. He is a co-applicant on the UK multicentre NIHR-HTA funded
+                                Baby OSCAR trial into early selective treatment of patent ductus arteriosus. He
+                                led the first randomised controlled trial of inhaled nitric oxide in preterm
+                                neonates and previously chaired the European Inhaled Nitric Oxide Registry.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatal </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Jay.png"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Jay Banerjee</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                <span >Dr. Jay Banerjee,</span> is a <span>Neonatal
+                                    Consultant at Imperial
+                                    College Healthcare NHS Trust and Honorary Senior Clinical Lecturer at
+                                    Imperial College London's Institute of Reproductive and Developmental
+                                    Biology, focuses on non-invasive research techniques for neonatal
+                                    hemodynamics. </span>
+                                He utilises machine learning to analyse physiological parameters and
+                                investigates the long-term cardiovascular outcomes of prematurity, supported by
+                                Imperial NIHR Biomedical Research Centre. With a keen interest in family
+                                integrated care research in neonatology, Banerjee is an integral part of the
+                                perinatology research group at the IRDB, contributing significantly to
+                                advancements in neonatal care and understanding.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Bikash.png"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Bikash Bhojnagarwala</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                <span >Dr. Bikash Bhojnagarwala,</span> <span>is
+                                    a <span>consultant Neonatologist at
+                                        Medway NHS Foundation Trust. </span>
+                                    specialises in paediatric cardiology and is certified in congenital heart
+                                    disease Echocardiography. His expertise encompasses Point of Care Ultrasound
+                                    (POCUS) for lung, lines, and heart assessments, with integrated hemodynamics. As
+                                    Trust Wellbeing Lead at Kent and Medway Medical School, he mentors undergraduate
+                                    medical students. He is an active contributor to medical education, organises
+                                    national paediatric cardiology conferences, instructs in ECHO and POCUS courses,
+                                    and holds executive roles in professional groups. Dr Bhojnagarwala has completed
+                                    several projects and presented at international conferences, focusing on
+                                    neonatal and paediatric cardiology, showcasing his substantial passion in the
+                                    field.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Anna.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Anna Milan</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                               Dr. Anna Milan, <span>
+                                    is a <span>Consultant
+                                        Neonatologist at
+                                        Evelina London Neonatal Unit (ELNU), part of Guy’s and St Thomas’ NHS
+                                        Foundation Trust in London. </span>
+                                    completed paediatric training at the University of Padua in Italy and a PhD in
+                                    Tissue Engineering in collaboration with the Institute of Child Health in
+                                    London. Joining ELNU in 2016, she specialises in caring for infants with complex
+                                    congenital and acquired conditions, providing support to their families. Dr.
+                                    Milan also serves as the recruitment lead for junior medical staff, expanding
+                                    her role to educate and mentor future generations. Trained in Functional Echo
+                                    and Point of Care Ultrasound, she is an accredited trainer for paediatric lung
+                                    ultrasound.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Anay.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Anay Kulkarni</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                <span > Dr. Anay Kulkarni</span> is a
+                                <span>Consultant Neonatologist at St.
+                                    George’s Hospital NHS Foundation Trust, London, and Honorary Consultant in
+                                    Paediatric Cardiology at Royal Brompton and Harefield NHS Foundation Trust,
+                                    boasts extensive training in Mumbai University, India,</span>
+                                with subsequent specialisation in Neonatology and Paediatric Cardiology in
+                                London. Accredited with the European Certification in Congenital Heart Disease
+                                Echocardiography, he excels as an expert and teacher in Neonatal
+                                echocardiography having conducted over 2000 assessments. Leading the Neonatal
+                                Cardiology Service, he focuses on hemodynamic assessment, Patent Ductus
+                                Arteriosus, Pulmonary Hypertension, and Functional Echocardiography. Actively
+                                involved in POCUS program development, Dr. Kulkarni directs echocardiography
+                                courses and serves as faculty for Neonatal Echocardiography &amp; Haemodynamics
+                                courses.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Geza.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr Geza Vass</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                <span> Dr Geza Vass</span> is a <span>Consultant
+                                    Neonatologist at John
+                                    Radcliffe Hospital, Oxford, earned his Medical Degree at Semmelweis
+                                    University of Medical Sciences, Budapest, Hungary.</span>
+                                After research, he obtained a PhD in Respiratory Medicine and specialised in
+                                Pediatrics in Hungary. Subsequently, he moved to the UK, specialising further in
+                                Neonatal Medicine. Working in various tertiary neonatal centres, he honed his
+                                skills in functional echocardiography and point-of-care ultrasound scanning.
+                                Joining the Neo-Focus group in 2021, Dr Vass contributes his expertise to
+                                advancements in neonatal care and continues to expand his knowledge in
+                                specialised areas of neonatology.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Virginie.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Meau-Petit</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                Dr. Meau-Petit is an
+                                <span>experienced senior neonatologist,
+                                    has extensive experience in paediatric and level 4 neonatal intensive care
+                                    in Paris and London. </span>
+                                Over the past two decades, she has specialised in neonatal and paediatric
+                                hemodynamics, earning a master's degree in 2016. A key advocate of neonatal lung
+                                ultrasound in the UK since 2014, she holds accreditation as a mentor by the
+                                British Intensive Care Society. Co-founding the neoFOCUS-UK group and leading
+                                the French group for paediatric lung ultrasound (GEPP), she emphasises a
+                                holistic, physiology-based approach to patient care. Dr. Meau-Petit's
+                                publications on heart, central lines, and lung ultrasound contribute to
+                                advancing individualised care by integrating clinical data with point-of-care
+                                ultrasound findings.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Ahmad.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr Ahmad Sherjil</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                Dr Ahmad Sherjil is a
+                                <span>consultant neonatologist in
+                                    Victoria Hospital Kirkcaldy as well as Queen Elizabeth University Hospital
+                                    Glasgow. </span>
+                                He is one of the founding members of the group. He has wide experience and
+                                expertise in most aspects of neonatal point of care ultrasound including
+                                advanced lung ultrasound, neonatal functional/haemodynamic echocardiography and
+                                ultrasound facilitated PICC/umbilical catheter insertion and ETT placement. He
+                                has special interest in administering surfactant and managing difficult airways
+                                with Laryngeal Mask Airway. He has an ongoing contribution as instructor in lung
+                                ultrasound courses conducted by the group nationwide.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Abhijit.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Abhijit Bhattacharya</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                                Dr. Abhijit Bhattacharya is
+                                a <span>distinguished Neonatologist
+                                    and Senior Clinical and Research Fellow at Queen Elizabeth University
+                                    Hospital, Glasgow, possesses over a decade of experience in neonatal
+                                    medicine. </span>
+                                Specializing in point-of-care ultrasound and neonatal echocardiography, he is a
+                                key member of the Scottish Neonatal Hemodynamic POCUS group and Mprove Academy.
+                                Dr. Bhattacharya leads training sessions on Lung Ultrasound and Neonatal
+                                Hemodynamic Ultrasound, crafting guidelines for clinical practices. As a
+                                dedicated research fellow, he explores Congenital Diaphragmatic Hernia
+                                complexities. His global impact is evident through teaching in Asia,
+                                contributing significantly to medical education, and conducting Point of Care
+                                Ultrasound workshops across UK units.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Arin.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr. Arin Mukherjee</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                              Dr. Arin Mukherjee <span>took up the
+                                    consultant post at
+                                    Saint Mary’s Hospital in 2014 after completing higher specialist training
+                                    (CCT in Neonatology) in the UK. </span>
+                                His primary areas of expertise include functional echocardiography, regional
+                                circulation and neonatal haemodynamics. Dr Mukherjee holds a Senior Lecturer
+                                position with the University of Manchester and is the Divisional research lead
+                                for new-born services. Dr Mukherjee is accredited in Congenital Heart Disease
+                                Echocardiography by the European Association of Cardiovascular Imaging, endorsed
+                                by the European Society of Cardiology.
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Neonatologist </span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+
+                            <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                               
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="img/Member-Harsha.jpg"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">Dr Harsha Gowda</h5>
+                         
+                            <p class="py-2" style="text-align: justify;height: 300px;overflow: auto;">
+                               Dr Harsha Gowda <span>Consultant
+                                    Neonatologist at
+                                    Birmingham Heartlands Hospital part of University Hospitals of Birmingham
+                                    NHS trust. </span>
+                                His expertise is Neonatal cardiology, echocardiography, haemodynamics, POCUS,
+                                preterm stabilisation, and surfactant administration. He is Training Programme
+                                Director for Neonatal education/teaching for West Midlands deanery. Dr Gowda
+                                organises and faculty in Neonatal POCUS study day, Neonatal ventilation workshop
+                                and regional ECHO meetings. He has led many audits, QIP’s and number of short
+                                research projects. He has done various conference presentations and publications
+                                in peer reviewed journals. He is also clinical tutor for junior specialist
+                                doctors at UHB and contributes to medical education
+                            </p>
+                        </div>
+                        <div
+                            class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+            </div>
+
+          
+
+        </div>
+    </div>
+    <br>
+   
+    
+    <!-- our Faculty Ends -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <img src="img/Logo_Color.png" style="width: 120px;z-index: 1;position: relative;" />
+                    </a>
+                    <p class="mt-4 text-light">we are a dedicated group of UK-based neonatologists, specialising in the
+                        application of functional echocardiography and point of care ultrasound (POCUS) in neonatal care
+                    </p>
+                    <div class="d-flex hightech-link">
+                        <a href="https://www.youtube.com/channel/UCwx55me6_InHqYDWJNiZbUA" target="_blank"
+                        class="nav-fill btn" style="background-color: red;color: white;"><i
+                            class="fa fa-youtube-play" > </i>&nbsp; YouTube</a> &nbsp;
+                    <a href="https://twitter.com/" target="_blank"
+                        class="bg-primary nav-fill btn " style="color: white;"><img src="img/x-twitter.png"
+                            style="width: 16px;height: 16px;" /> &nbsp;Twitter </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Short Link</a>
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="index.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Home</a>
+                            <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About Us</a>
+                            <a href="webinar.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Webinars</a>
+                            <a href="workshop.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Workshops</a>
+                            <a href="resources.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Resources</a>
+                            <a href="vision.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Vision</a>
+                            <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Help Link</a>
+                    <div class="mt-4 d-flex flex-column help-link">
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms
+                            Of use</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy
+                            Policy</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Contact Us</a>
+                    <div class="text-white mt-4 d-flex flex-column contact-link">
+                        <a href="#" class="pb-3 text-light border-bottom border-primary"><i
+                                class="fas fa-map-marker-alt text-secondary me-2"></i> UK</a>
+
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i
+                                class="fas fa-envelope text-secondary me-2"></i> neofocusuk@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light"><a href="#" class="text-secondary"><i
+                                class="fas fa-copyright text-secondary me-2"></i>neofocus-uk.com</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <span class="text-light">Designed By <a href="" class="text-secondary">Segmentoo</a></span>
+
+                    <span class="text-light" style="display: none;">Designed By<a href="https://htmlcodex.com"
+                            class="text-secondary">HTML Codex</a> Distributed By <a
+                            href="https://themewagon.com">ThemeWagon</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
