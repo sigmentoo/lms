@@ -677,6 +677,8 @@
 
 p{
     color:#2C3539;
+    
     text-align: justify;
+    text-justify: inter-word;
 }
 /*** Footer End ***/
